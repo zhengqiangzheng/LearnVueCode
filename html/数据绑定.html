@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>数据绑定</title>
+    <script src="../js/vue.min.js"></script>
+</head>
+<style>
+    html{
+        overflow: auto;
+    }
+</style>
+<body>
+<div id="app">
+    <span v-html="link"></span>
+    <span v-pre>{{book}}</span>
+    {{text.split(',').reverse()}}
+</div>
+<script>
+    var app=new Vue({
+        el:'#app',
+        data:{
+            link:'<a href="#">这是一个链接</a>',
+            book:'hhahah',
+            text:'abc,dfg'
+        }
+    })
+</script>
+
+
+</body>
+</html>

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>hellovue</title>
+    <script src="../js/vue.min.js"></script>
+</head>
+<body>
+<div id="app">
+    <input type="text" v-model="name" placeholder="你的名字">
+    <h1>你好,{{name}}</h1>
+</div>
+
+</body>
+<script>
+    var app=new Vue({
+        el:'#app',
+        data:{
+            name:'tom',
+            a:2
+        },
+        created:function () {
+            console.log(this.a);
+        },
+        mounted:function () {
+            console.log(this.$el);
+        }
+    })
+
+</script>
+</html>

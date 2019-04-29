@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>插值u表达式</title>
+    <script src="../js/vue.min.js"></script>
+</head>
+<body>
+<div id="app">
+    {{date}}
+
+    <p v-if="show">我是一个文本</p>
+    <button @click="clickme">点我</button>
+</div>
+
+<script>
+    var app=new Vue({
+        el:'#app',
+        data:{
+            date:new Date(),
+            show:true
+        },
+
+        mounted:function () {
+            this.init('正在初始化');
+            var _this = this;
+            this.timer = setInterval(function () {
+                _this.date = new Date()
+            }, 1000);
+        },
+        beforeDestroy:function () {
+            if (this.timer) {
+                clearInterval(this.timer);
+            }
+        }
+        ,  methods:{
+            clickme:function () {
+                this.show=!this.show
+                console.log(1);
+
+            },init:function (text) {
+                console.log(text);
+
+            }
+
+        }
+
+    })
+    app.init("我在外面哦");
+
+</script>
+
+</body>
+</html>
