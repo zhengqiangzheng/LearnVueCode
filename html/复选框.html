@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>复选框</title>
+    <script src="../js/vue.min.js"></script>
+</head>
+<body>
+<div id="app">
+    <p>单个复选框</p>
+    <input type="checkbox" v-model="checked" id="checked">
+    <label for="checked">选择状态:{{checked}}</label>
+    <p>多个复选框</p>
+    <input type="checkbox" v-model="checkState" id="html" value="html">
+    <label for="html">HTML</label>
+    <br>
+    <input type="checkbox" v-model="checkState" id="js" value="js">
+    <label for="js">js</label>
+    <br>
+    <input type="checkbox" v-model="checkState" id="css" value="css">
+    <label for="css">CSS</label>
+   <p>选择状态:{{checkState}}</p>
+
+</div>
+<script>
+    var app =new Vue({
+        el:'#app',
+        data:{
+            checked:false,
+            checkState:[]
+        }
+    })
+</script>
+
+
+</body>
+</html>

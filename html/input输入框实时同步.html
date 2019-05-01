@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>表单与v-model</title>
+    <script src="../js/vue.min.js"></script>
+</head>
+<body>
+<div id="app">
+    <textarea placeholder="please write" v-model="text"></textarea>
+    <p>输入的内容是:</p>
+    <p style="white-space: pre">{{text}}</p>
+    <textarea placeholder="please write again" @input="handleInput"></textarea>
+    <p>输入的内容是:</p>
+    <p style="white-space: pre">{{message}}</p>
+
+</div>
+
+
+</body>
+<script>
+    var app = new Vue({
+        el: '#app',
+        data: {
+            text: ''
+            ,message:''
+
+        },
+        methods: {
+            handleInput: function (e) {
+                this.message = e.target.value;
+
+            }
+
+        }
+    })
+</script>
+</html>
