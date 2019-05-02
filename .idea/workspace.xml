@@ -2,15 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="710c67bf-86f0-43d9-bb4f-f12f6a00023b" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/html/input输入框实时同步.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/html/单选按钮radio.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/html/复选框.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/html/选择列表-下拉框.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/html/选择列表-下拉框2.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/css/购物车.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/购物车.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/html/购物车.html" beforeDir="false" afterPath="$PROJECT_DIR$/html/购物车.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/js/购物车.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/购物车.js" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -93,8 +85,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/html/选择列表-下拉框2.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="450">
-              <caret line="24" column="18" lean-forward="true" selection-start-line="24" selection-start-column="18" selection-end-line="24" selection-end-column="18" />
+            <state relative-caret-position="500">
+              <caret line="44" lean-forward="true" selection-start-line="44" selection-end-line="44" />
             </state>
           </provider>
         </entry>
@@ -226,7 +218,7 @@
       <workItem from="1556379113781" duration="4562000" />
       <workItem from="1556455944829" duration="10303000" />
       <workItem from="1556539207438" duration="5131000" />
-      <workItem from="1556698582578" duration="13598000" />
+      <workItem from="1556698582578" duration="13734000" />
     </task>
     <task id="LOCAL-00001" summary="commit">
       <created>1556582235797</created>
@@ -235,15 +227,21 @@
       <option name="project" value="LOCAL" />
       <updated>1556582235797</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="vue基础提交">
+      <created>1556728171691</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1556728171691</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="33594000" />
+    <option name="totallyTimeSpent" value="33730000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.19550858" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
@@ -269,7 +267,8 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="commit" />
-    <option name="LAST_COMMIT_MESSAGE" value="commit" />
+    <MESSAGE value="vue基础提交" />
+    <option name="LAST_COMMIT_MESSAGE" value="vue基础提交" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/js/vue.min.js">
@@ -407,8 +406,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/html/选择列表-下拉框2.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="450">
-          <caret line="24" column="18" lean-forward="true" selection-start-line="24" selection-start-column="18" selection-end-line="24" selection-end-column="18" />
+        <state relative-caret-position="500">
+          <caret line="44" lean-forward="true" selection-start-line="44" selection-end-line="44" />
         </state>
       </provider>
     </entry>
