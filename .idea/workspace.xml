@@ -2,16 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="710c67bf-86f0-43d9-bb4f-f12f6a00023b" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/html/vue基础/reference 应用计数器.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/html/vue基础/ref操作dom.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/html/vue基础/sample.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/html/vue基础/todolist.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/html/vue基础/todolist升级为组件.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/html/vue基础/父子组件的传值方式系统讲解.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/html/vue基础/组件.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/html/vue基础/组件参数校验与非props特性.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/html/vueCSS动画/hello-vue-css-动画.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/html/vue基础/Vue中使用插槽.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/html/vue基础/动态组件和v-once指令.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/html/vue基础/插槽作用域传值.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/html/vue基础/非父子组件传值.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/html/vue基础/v-for.html" beforeDir="false" afterPath="$PROJECT_DIR$/html/vue基础/v-for.html" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -25,34 +21,9 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/html/vue基础/计算属性.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state>
-              <caret line="26" column="38" selection-start-line="26" selection-start-column="33" selection-end-line="26" selection-end-column="38" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/html/vue基础/todolist升级为组件.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="300">
-              <caret line="15" column="74" selection-start-line="15" selection-start-column="74" selection-end-line="15" selection-end-column="74" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/html/vue基础/todolist.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-375" />
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/html/vue基础/组件.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="81">
+            <state relative-caret-position="300">
               <caret line="12" column="30" selection-start-line="12" selection-start-column="30" selection-end-line="12" selection-end-column="30" />
             </state>
           </provider>
@@ -71,7 +42,7 @@
         <entry file="file://$PROJECT_DIR$/html/vue基础/reference 应用计数器.html">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="525">
-              <caret line="21" column="17" lean-forward="true" selection-start-line="21" selection-start-column="17" selection-end-line="21" selection-end-column="61" />
+              <caret line="21" column="17" selection-start-line="21" selection-start-column="17" selection-end-line="21" selection-end-column="61" />
             </state>
           </provider>
         </entry>
@@ -80,16 +51,61 @@
         <entry file="file://$PROJECT_DIR$/html/vue基础/父子组件的传值方式系统讲解.html">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="175">
-              <caret line="7" lean-forward="true" selection-start-line="7" selection-end-line="7" />
+              <caret line="7" selection-start-line="7" selection-end-line="7" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/html/vue基础/组件参数校验与非props特性.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="750">
+              <caret line="30" column="6" selection-start-line="30" selection-start-column="6" selection-end-line="30" selection-end-column="6" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/html/vue基础/非父子组件传值.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="274">
+              <caret line="38" column="53" selection-start-line="38" selection-start-column="53" selection-end-line="38" selection-end-column="53" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/html/vue基础/Vue中使用插槽.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="325">
+              <caret line="21" column="59" selection-start-line="21" selection-start-column="59" selection-end-line="21" selection-end-column="59" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/html/vue基础/插槽作用域传值.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="150">
+              <caret line="15" column="12" selection-start-line="15" selection-start-column="12" selection-end-line="15" selection-end-column="12" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/html/vue基础/动态组件和v-once指令.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="425">
+              <caret line="17" column="6" lean-forward="true" selection-start-line="17" selection-start-column="6" selection-end-line="17" selection-end-column="6" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/html/vue基础/组件参数校验与非props特性.html">
+        <entry file="file://$PROJECT_DIR$/html/vueCSS动画/hello-vue-css-动画.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="141">
-              <caret line="28" column="40" selection-start-line="28" selection-start-column="34" selection-end-line="28" selection-end-column="40" />
+            <state relative-caret-position="250">
+              <caret line="16" lean-forward="true" selection-start-line="16" selection-end-line="16" />
             </state>
           </provider>
         </entry>
@@ -106,6 +122,10 @@
     </option>
   </component>
   <component name="FindInProjectRecents">
+    <findStrings>
+      <find>String</find>
+      <find>type</find>
+    </findStrings>
     <dirStrings>
       <dir>D:\code\webstormproject\vueCode</dir>
     </dirStrings>
@@ -115,6 +135,9 @@
     <option name="PUSH_TAGS">
       <GitPushTagMode />
     </option>
+  </component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/html/vue基础/插槽作用域传值.html" root0="SKIP_INSPECTION" />
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
@@ -148,11 +171,16 @@
         <option value="$PROJECT_DIR$/html/vue基础/reference 应用计数器.html" />
         <option value="$PROJECT_DIR$/html/vue基础/父子组件的传值方式系统讲解.html" />
         <option value="$PROJECT_DIR$/html/vue基础/组件参数校验与非props特性.html" />
+        <option value="$PROJECT_DIR$/html/vue基础/非父子组件传值.html" />
+        <option value="$PROJECT_DIR$/html/vue基础/Vue中使用插槽.html" />
+        <option value="$PROJECT_DIR$/html/vue基础/插槽作用域传值.html" />
+        <option value="$PROJECT_DIR$/html/vue基础/动态组件和v-once指令.html" />
+        <option value="$PROJECT_DIR$/html/vueCSS动画/hello-vue-css-动画.html" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="96" />
+    <option name="x" value="95" />
     <option name="y" value="260" />
     <option name="width" value="1750" />
     <option name="height" value="980" />
@@ -165,7 +193,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -178,21 +205,11 @@
               <item name="vueCode" type="462c0819:PsiDirectoryNode" />
               <item name="html" type="462c0819:PsiDirectoryNode" />
             </path>
-            <path>
-              <item name="vueCode" type="b2602c69:ProjectViewProjectNode" />
-              <item name="vueCode" type="462c0819:PsiDirectoryNode" />
-              <item name="html" type="462c0819:PsiDirectoryNode" />
-              <item name="vue基础" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="vueCode" type="b2602c69:ProjectViewProjectNode" />
-              <item name="vueCode" type="462c0819:PsiDirectoryNode" />
-              <item name="js" type="462c0819:PsiDirectoryNode" />
-            </path>
           </expand>
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -201,7 +218,7 @@
     <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
-    <property name="settings.editor.selected.configurable" value="editing.templates" />
+    <property name="settings.editor.selected.configurable" value="editor.preferences.completion" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
@@ -242,7 +259,8 @@
       <workItem from="1556698582578" duration="13734000" />
       <workItem from="1556762840520" duration="2578000" />
       <workItem from="1556847413199" duration="5900000" />
-      <workItem from="1556955630855" duration="11734000" />
+      <workItem from="1556955630855" duration="17870000" />
+      <workItem from="1557008798301" duration="4820000" />
     </task>
     <task id="LOCAL-00001" summary="commit">
       <created>1556582235797</created>
@@ -265,16 +283,24 @@
       <option name="project" value="LOCAL" />
       <updated>1556762960321</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="组件代码提交">
+      <created>1556975953317</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1556975953317</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="53942000" />
+    <option name="totallyTimeSpent" value="64898000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
+    <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.20277411" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.20277411" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -285,7 +311,7 @@
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
-      <window_info active="true" anchor="bottom" id="Version Control" order="8" visible="true" weight="0.3286119" />
+      <window_info anchor="bottom" id="Version Control" order="8" weight="0.3281471" />
       <window_info anchor="bottom" id="Terminal" order="9" />
       <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
@@ -319,7 +345,8 @@
     <MESSAGE value="commit" />
     <MESSAGE value="vue基础提交" />
     <MESSAGE value="change file catalogue" />
-    <option name="LAST_COMMIT_MESSAGE" value="change file catalogue" />
+    <MESSAGE value="组件代码提交" />
+    <option name="LAST_COMMIT_MESSAGE" value="组件代码提交" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/js/vue.min.js">
@@ -441,13 +468,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/html/vue基础/计算属性.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret line="26" column="38" selection-start-line="26" selection-start-column="33" selection-end-line="26" selection-end-column="38" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/html/vue基础/sample.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="400">
@@ -462,11 +482,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/html/vue基础/todolist.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-375" />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/html/vue基础/购物车.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="125">
@@ -474,10 +489,27 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/html/vue基础/reference 应用计数器.html">
+    <entry file="file://$PROJECT_DIR$/html/vue基础/计算属性.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="525">
-          <caret line="21" column="17" lean-forward="true" selection-start-line="21" selection-start-column="17" selection-end-line="21" selection-end-column="61" />
+        <state relative-caret-position="650">
+          <caret line="26" column="38" selection-start-line="26" selection-start-column="33" selection-end-line="26" selection-end-column="38" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/html/vue基础/todolist升级为组件.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="375">
+          <caret line="15" column="74" selection-start-line="15" selection-start-column="74" selection-end-line="15" selection-end-column="74" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/html/vue基础/todolist.html">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/html/vue基础/组件.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="300">
+          <caret line="12" column="30" selection-start-line="12" selection-start-column="30" selection-end-line="12" selection-end-column="30" />
         </state>
       </provider>
     </entry>
@@ -488,31 +520,59 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/html/vue基础/组件.html">
+    <entry file="file://$PROJECT_DIR$/html/vue基础/reference 应用计数器.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="81">
-          <caret line="12" column="30" selection-start-line="12" selection-start-column="30" selection-end-line="12" selection-end-column="30" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/html/vue基础/todolist升级为组件.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="300">
-          <caret line="15" column="74" selection-start-line="15" selection-start-column="74" selection-end-line="15" selection-end-column="74" />
+        <state relative-caret-position="525">
+          <caret line="21" column="17" selection-start-line="21" selection-start-column="17" selection-end-line="21" selection-end-column="61" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/html/vue基础/父子组件的传值方式系统讲解.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="175">
-          <caret line="7" lean-forward="true" selection-start-line="7" selection-end-line="7" />
+          <caret line="7" selection-start-line="7" selection-end-line="7" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/html/vue基础/组件参数校验与非props特性.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="141">
-          <caret line="28" column="40" selection-start-line="28" selection-start-column="34" selection-end-line="28" selection-end-column="40" />
+        <state relative-caret-position="750">
+          <caret line="30" column="6" selection-start-line="30" selection-start-column="6" selection-end-line="30" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/html/vue基础/非父子组件传值.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="274">
+          <caret line="38" column="53" selection-start-line="38" selection-start-column="53" selection-end-line="38" selection-end-column="53" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/html/vue基础/Vue中使用插槽.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="325">
+          <caret line="21" column="59" selection-start-line="21" selection-start-column="59" selection-end-line="21" selection-end-column="59" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/html/vue基础/插槽作用域传值.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="15" column="12" selection-start-line="15" selection-start-column="12" selection-end-line="15" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/html/vue基础/动态组件和v-once指令.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="425">
+          <caret line="17" column="6" lean-forward="true" selection-start-line="17" selection-start-column="6" selection-end-line="17" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/html/vueCSS动画/hello-vue-css-动画.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="250">
+          <caret line="16" lean-forward="true" selection-start-line="16" selection-end-line="16" />
         </state>
       </provider>
     </entry>

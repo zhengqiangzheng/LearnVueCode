@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>非父子组件传值</title>
+    <script src="https://cdn.bootcss.com/vue/2.6.10/vue.js"></script>
+</head>
+<body>
+<div id="root">
+<child content="zheng"></child>
+<child content="qiang"></child>
+</div>
+
+</body>
+<script>
+    Vue.prototype.bus = new Vue();
+
+
+    Vue.component('child',{
+        template:'<div @click="handleClick">{{selfContent}}</div>',
+        props: ['content'],
+        data:function () {
+            return{
+                selfContent:this.content
+
+            }
+        },
+        /*点击时每个组件都有bus原型都会监听到change事件*/
+        methods: {
+            handleClick:function () {
+                /*想有用bus原型的组件传递change方法和自己的content参数*/
+                this.bus.$emit('change',this.selfContent)
+            }
+
+        },
+        /*把监听到的msg换成自己的msg*/
+        mounted:function () {
+            // var this_=this
+            // this.bus.$on('change',function (msg) {
+            //     this_.selfContent=msg
+            // })
+            this.bus.$on('change',(msg)=>{
+                this.selfContent = msg;
+            })
+        }
+    })
+    var app=new Vue({
+        el: '#root',
+
+
+
+    })
+
+
+</script>
+</html>

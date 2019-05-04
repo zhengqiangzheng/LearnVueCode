@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>动态组件和v-once</title>
+        <script src="https://cdn.bootcss.com/vue/2.6.10/vue.min.js"></script>
+
+</head>
+<body>
+<div id="root">
+    <!--<child-one></child-one>-->
+    <!--<child-two></child-two>-->
+    <child-one v-if="type==='child-one'"></child-one>
+    <child-two v-if="type==='child-two'"></child-two>
+    <!--动态组件-->
+    <!--<component :is="type"></component>-->
+    <button @click="handleBtnClick">change</button>
+</div>
+
+</body>
+<script>
+    /*v-once 提高静态内容的展示效率*/
+    Vue.component('child-one',{
+        template:'<div v-once>child-one</div>'
+    })
+    Vue.component('child-two',{
+        template:'<div v-once>child-two</div>'
+    })
+
+    var app=new Vue({
+        el:'#root',
+        data:{
+            type:'child-one'
+        },
+        methods:{
+            handleBtnClick:function () {
+                this.type = (this.type === 'child-one' ? 'child-two' : 'child-one');
+            }
+        }
+
+    })
+
+</script>
+</html>
