@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>ref操作dom</title>
+    <script src="../../js/vue.min.js"></script>
+</head>
+<body>
+<div id="root">
+    <div ref="hello" @click="handleClick">
+        hello world
+    </div>
+
+</div>
+
+</body>
+<script>
+var app=new Vue({
+    el:'#root',
+    methods:{
+        handleClick:function () {
+            // /alert('click')
+            console.log(this.$refs.hello.innerHTML)
+        }
+
+    }
+
+})
+</script>
+</html>

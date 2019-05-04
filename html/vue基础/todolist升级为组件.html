@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>todolist</title>
+    <script src="../../js/vue.min.js"></script>
+</head>
+<body>
+<div id="app">
+    <input type="text" v-model="todoValue">
+    <button @click="handleBtnClick">提交</button>
+    <ul>
+        <!--<li v-for="item in list">-->
+            <!--{{item}}-->
+        <!--</li>-->
+        <todo-item v-for="(item,index) in list" :content="item" :index="index"
+                   @delete="handleItemDelete">  //父组件向子组件传值，使用v-bind绑定一个content，子组件使用props使用
+
+
+        </todo-item>
+    </ul>
+
+    <div>
+
+    </div>
+</div>
+
+</body>
+<script>
+    /*全局组件定义方式*/
+    // Vue.component('TodoItem',{
+    //     props:['content'],
+    //     template: '<li>{{content}}</li>'
+    // })
+    /*局部组件,需要在下面的app中注册*/
+    let TodoItem={
+        props:['content','index'],
+        template: '<li @click="handleItemClick">{{content}}</li>',
+        methods: {
+            handleItemClick:function () {
+                //alert('click')
+                this.$emit('delete',this.index) //子组件向父组件传值，父组件要监听delete方法
+            }
+        }
+    }
+    var  app=new Vue({
+
+        el: '#app',
+        data:{
+            todoValue: '',
+            list: [],
+        },
+        components:{
+            TodoItem: TodoItem
+        },
+        methods:{
+            handleBtnClick:function () {
+                this.list.push(this.todoValue);
+                this.todoValue = '';
+
+
+            },
+            handleItemDelete:function (index) {
+                this.list.splice(index, 1);
+                //alert(111)
+
+
+            }
+
+        }
+    })
+    
+</script>
+</html>

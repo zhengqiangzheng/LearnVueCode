@@ -16,7 +16,7 @@
 
 
     <ul>
-        <li v-for="(book,index) in books">{{index}}--{{book.name}}</li>
+        <li v-for="(book,key,index) in books">{{index}}--{{book.name}}--{{key}}</li>
     </ul>
     <ul>
         <li v-for="(value,key,index) in user">
@@ -24,6 +24,7 @@
 
         </li>
     </ul>
+
 
 </div>
 <script>

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>组件</title>
+    <script src="../../js/vue.min.js"></script>
+</head>
+<body>
+<div id="root">
+    <table>
+        <tbody>
+        <tr is="row"></tr>
+    <!--因为tbody里面只能写tr所以用is 语法-->
+        <tr is="row"></tr>
+        <tr is="row"></tr>
+        </tbody>
+    </table>
+
+</div>
+</body>
+<script>
+    Vue.component('row', {
+        data: function () {
+            return {
+                content:'this is content'   //子组件的data需要写成方法
+            }
+        },
+        template: '<tr><td>{{content}}</td></tr>'
+    });
+    var vm = new Vue({
+        el: '#root'
+
+    })
+</script>
+
+</html>

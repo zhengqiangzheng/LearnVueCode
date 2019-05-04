@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>父子组件传值方式</title>
+    <script src="../../js/vue.min.js"></script>
+
+
+</head>
+<body>
+<div id="root">
+    <counter :count="0" @change="handleChange"></counter>
+    <counter :count="0" @change="handleChange"></counter>
+
+    <div>{{total}}</div>
+
+
+</div>
+
+</body>
+<script>
+    const counter = {
+        props: ['count'],
+        template: '<div @click="handleClick">{{number}}</div>',
+        data: function () {
+            return{
+                number:this.count
+        }
+        },
+        methods: {
+            handleClick: function () {
+                this.number++;
+                this.$emit('change', 1);
+                /*不能直接改变从父组件传过来的值*/
+                //this.count++;
+            }
+        }
+    };
+
+    const vm = new Vue({
+        el: '#root',
+        components: {
+            counter: counter
+
+        },data:{
+            total: 0
+        },
+        methods: {
+            handleChange: function (step) {
+                this.total += step;
+
+            }
+        }
+
+    });
+
+</script>
+</html>

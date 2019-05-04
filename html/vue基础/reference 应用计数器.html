@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>reference应用计数器</title>
+    <script src="../../js/vue.min.js"></script>
+</head>
+<body>
+<div id="root">
+<counter @change="handleChange" ref="one"></counter>
+<counter @change="handleChange" ref="two"></counter>
+    <div>{{total}}</div>
+</div>
+<script>
+    Vue.component('counter',{
+        /*子组件的数据必须以function的形式存在*/
+        data:function () {
+            return{
+                number:0
+            }
+        },
+        template:`<div @click="handleClick">{{number}}</div>`,
+        methods:{
+            handleClick:function () {
+                this.number++;
+                this.$emit('change')
+            }
+        }
+
+    })
+
+    var vm=new Vue({
+        el: '#root',
+        data:{
+            total:0
+        },methods: {
+            handleChange:function () {
+               this.total= this.$refs.one.number+this.$refs.two.number
+            }
+        }
+
+    })
+</script>
+</body>
+</html>
