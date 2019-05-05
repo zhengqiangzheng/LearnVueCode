@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>lal</title>
+    <link href="https://cdn.bootcss.com/animate.css/3.7.0/animate.min.css" rel="stylesheet">
+
+    <script src="https://cdn.bootcss.com/vue/2.6.10/vue.js"></script>
+    <style>
+        /*使用animal.css库*/
+
+
+
+        .fade-enter,.fade-leave-to {
+            opacity: 0;
+
+        }
+        .fade-enter-active,.fade-leave-active {
+            transition: opacity 3s;
+
+        }
+  </style>
+</head>
+<body>
+<!--   //自定义进出场动画时长 :duration="{enter:5000,leave:10000}"-->
+<div id="root">
+
+    <transition
+                type="transition"
+                name="fade"
+                appear
+                enter-active-class="animated swing fade-enter-active "
+                leave-active-class="animated shake fade-leave-active"
+                 appear-active-class="animated heartBeat"                                   >
+        <div v-if="show">hello world</div>
+    </transition>
+    <button @click="handleBtnClick">切换</button>
+
+
+</div>
+
+</body>
+<script>
+    var vm = new Vue({
+        el: '#root',
+        data: {
+            show: true
+        },
+        methods: {
+            handleBtnClick: function () {
+                this.show = !this.show;
+            }
+        }
+    })
+
+</script>
+</html>
