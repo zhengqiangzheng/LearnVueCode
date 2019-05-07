@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>vue js动画</title>
+    <script src="../../js/vue.min.js"></script>
+    <script src="https://cdn.bootcss.com/velocity/2.0.5/velocity.min.js"></script>
+</head>
+<body>
+<div id="root">
+<transition name="fade"
+            @before-enter="handleBeforeEnter"
+            @enter="enter"
+            @after-enter="handleAfterEnter">
+
+
+
+    <div v-show="show">hello world</div>
+
+</transition>
+    <button @click="handleClick">toggle</button>
+
+</div>
+</body>
+<script>
+var app=new Vue({
+    el:'#root',
+    data:{
+        show: true
+
+    },
+    methods:{
+        handleClick:function () {
+            this.show=!this.show
+
+        },
+        handleBeforeEnter:function (el) {
+            el.style.opacity = 0;
+        }, enter: function (el, done) {
+            Velocity(el,{opacity:1},{duration: 1000, complete: done})
+        },
+        handleAfterEnter:function (el) {
+            console.log(1111)
+        }
+    }
+})
+</script>
+</html>

@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>列表过渡</title>
+    <script src="../../js/vue.min.js"></script>
+    <style>
+        .v-enter,.v-leave-to {
+            opacity: 0;
+
+        }
+        .v-enter-active,.v-leave-active {
+            transition: opacity 1s;
+
+        }
+    </style>
+</head>
+<body>
+<div id="root">
+
+    <transition-group>
+        <div v-for="(item,index) of list" :key="item.id">
+            {{item.title}}
+        </div>
+
+    </transition-group>
+    <button @click="click">click</button>
+
+
+</div>
+
+</body>
+<script>
+    var counter = 0;
+    var app=new Vue({
+        el:'#root',
+        data:{
+          list:[]
+
+        },
+        methods:{
+            click:function () {
+                this.list.push({
+                    id: counter++,
+                    title: 'hello world'
+
+                });
+
+            }
+
+        }
+    })
+</script>
+
+
+</html>

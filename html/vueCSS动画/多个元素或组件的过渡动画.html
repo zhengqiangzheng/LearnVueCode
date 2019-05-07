@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>多个元素动画</title>
+    <script src="../../js/vue.min.js"></script>
+    <style>
+        .v-enter,.v-leave-to {
+            opacity: 0;
+
+        }
+        .v-enter-active,.v-leave-active {
+            transition: opacity 1s;
+
+        }
+    </style>
+</head>
+<body>
+<div id="root">
+    <transition mode="in-out">
+
+    <div v-if="show" key="1">hello world</div>
+    <div v-else key="2">bye world</div>
+
+
+
+    </transition>
+    <button @click="handleClick">toggle</button>
+</div>
+
+</body>
+<script>
+    var app = new Vue({
+        el: '#root',
+        data:{
+            show: true
+        },
+        methods:{
+            handleClick:function () {
+                this.show = !this.show;
+            }
+        }
+
+    })
+</script>
+
+</html>

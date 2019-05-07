@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>vue js动画</title>
+    <script src="../../js/vue.min.js"></script>
+</head>
+<body>
+<div id="root">
+<transition name="fade"
+            @before-enter="handleBeforeEnter"
+            @enter="enter"
+            @after-enter="handleAfterEnter">
+
+
+
+    <div v-show="show">hello world</div>
+
+</transition>
+    <button @click="handleClick">toggle</button>
+
+</div>
+</body>
+<script>
+var app=new Vue({
+    el:'#root',
+    data:{
+        show: true
+
+    },
+    methods:{
+        handleClick:function () {
+            this.show=!this.show
+
+        },
+        handleBeforeEnter:function (el) {
+            el.style.color = 'red';
+        }, enter: function (el, done) {
+            setTimeout(() => {
+
+                el.style.color = 'green';
+
+            }, 2000);
+           setTimeout(()=>{
+               done();
+           },4000)
+
+        },
+        handleAfterEnter:function (el) {
+            el.style.color = 'black';
+        }
+    }
+})
+</script>
+</html>
