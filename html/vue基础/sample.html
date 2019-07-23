@@ -4,16 +4,39 @@
     <meta charset="UTF-8">
     <title>v-for2</title>
     <script src="../../js/vue.min.js"></script>
+    <script src="https://cdn.bootcss.com/lodash.js/4.17.12-pre/lodash.js"></script>
+    <script src="https://cdn.bootcss.com/moment.js/2.24.0/moment.min.js"></script>
 </head>
 <body>
 <div id="app">
-    <div>
+    <p>{{currentdate | dateString}}</p>
 
-    </div>
 </div>
 
 </body>
 <script>
+    Vue.filter('dateString',(value)=>{
+        return moment(value).format('MM-DD-YYYY HH:mm:ss')
+
+    })
+    var vm=new Vue({
+        el:'#app',
+        data:{
+            currentdate: new Date()
+        },
+        mounted(){
+            this.timer=setInterval(()=>{
+                this.currentdate=new Date()
+            },1000)
+
+        },
+
+        beforeDestroy(){
+            if (this.timer) {
+                clearInterval(this.timer);
+            }
+        }
+    })
 
 </script>
 </html>

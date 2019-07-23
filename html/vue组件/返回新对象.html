@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>v-for2</title>
+    <script src="../../js/vue.min.js"></script>
+</head>
+<body>
+<div id="app">
+   <my-component></my-component>
+   <my-component></my-component>
+   <my-component></my-component>
+</div>
+
+</body>
+<script>
+    var data={
+        counter:0
+    }
+
+    Vue.component('myComponent',{
+        template:'<button @click="counter++">{{counter}}</button>',
+
+        // data:function (){
+        //     return {
+        //         counter:0
+        //     }
+        //
+        // }
+        data(){
+            return{
+                counter: 1
+            }
+        }
+    })
+    var vm=new Vue({
+        el:'#app'
+
+    })
+
+
+</script>
+</html>

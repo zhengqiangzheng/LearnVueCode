@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>title</title>
+    <script src="https://cdn.bootcss.com/vue/2.6.10/vue.min.js"></script>
+</head>
+<body>
+<div id="app">
+    <!--对象表示style-->
+    <h1 :style="obj1">i am a h1</h1>
+</div>
+
+</body>
+<script>
+    var app = new Vue({
+        el: '#app',
+        data: {
+            obj1: {
+                color: 'red',
+                'font-weight': 200
+            }
+        },
+        methods: {}
+    })
+
+</script>
+</html>

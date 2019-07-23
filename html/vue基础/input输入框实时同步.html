@@ -10,9 +10,12 @@
     <textarea placeholder="please write" v-model="text"></textarea>
     <p>输入的内容是:</p>
     <p style="white-space: pre">{{text}}</p>
+    <!--使用@imput时中文输入法时也能同步更新-->
     <textarea placeholder="please write again" @input="handleInput"></textarea>
     <p>输入的内容是:</p>
-    <p style="white-space: pre">{{message}}</p>
+    <p>{{message}}</p>
+    <input type="text" v-model.lazy="haha" placeholder="你好啊">
+    <p>{{haha}}</p>
 
 </div>
 
@@ -24,6 +27,7 @@
         data: {
             text: ''
             ,message:''
+            ,haha:''
 
         },
         methods: {

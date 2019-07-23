@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="../../js/vue.min.js"></script>
+</head>
+<body>
+<div id="app">
+    <input type="button" value="浪起来" @click="lang">
+    <input type="button" value="稳住" @click="wen">
+    <h4>{{msg}}</h4>
+</div>
+<script>
+    var vm = new Vue({
+        el: '#app',
+        data: {
+            msg: "12345678",
+            intervalId: null
+        },
+        methods: {
+            lang() {
+                if (this.intervalId!=null) return;
+                this.intervalId = setInterval(() => {
+                    this.msg = this.msg.substring(1) + this.msg.slice(1, 2)
+                }, 400)
+            },
+            wen() {
+                clearInterval(this.intervalId)
+                this.intervalId=null
+            }
+        }
+
+    });
+</script>
+</body>
+</html>

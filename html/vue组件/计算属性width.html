@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>v-for2</title>
+    <script src="https://cdn.bootcss.com/vue/2.6.10/vue.js"></script>
+
+</head>
+<body>
+<div id="app">
+    <input type="text" v-model="width">
+<my-component :width="width"></my-component>
+</div>
+
+</body>
+<script>
+
+
+    Vue.component('myComponent',{
+        template:'<div :style="style">haha</div>',
+        props : {
+          width: String
+        },
+        computed : {
+            style : function () {
+                return {
+                    width : this.width + "px"
+                }
+            }
+        }
+    })
+    var vm=new Vue({
+        el:'#app',
+        data : {
+            width : ''
+        }
+
+    })
+
+
+</script>
+</html>

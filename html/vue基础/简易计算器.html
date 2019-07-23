@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>title</title>
+    <script src="https://cdn.bootcss.com/vue/2.6.10/vue.min.js"></script>
+</head>
+<body>
+<div id="app">
+    <input type="text" value="n1" v-model="n1">
+    <select name="" id="" v-model="opt">
+        <option value="+">+</option>
+        <option value="-">-</option>
+        <option value="*">*</option>
+        <option value="/">/</option>
+    </select>
+    <input type="text" value="n1" v-model="n2">
+
+    <input type="button" value="=" @click="cal">
+    <input type="text" value="res" v-model="res">
+
+</div>
+
+</body>
+<script>
+    var app = new Vue({
+        el: '#app',
+        data: {
+            n1:0,
+            n2:0,
+            opt: '+',
+            res:'0'
+        },
+        methods: {
+            cal() {
+                var str = 'parseInt(this.n1)'+this.opt+ 'parseInt(this.n2)'
+                this.res=eval(str);
+            }
+        }
+    })
+
+</script>
+</html>

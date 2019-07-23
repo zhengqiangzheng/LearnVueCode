@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>title</title>
+    <script src="https://cdn.bootcss.com/vue/2.6.10/vue.min.js"></script>
+    <style>
+        .red {
+            color: red;
+        }
+
+        .thin {
+            font-weight: 200;
+        }
+
+        .italic {
+            font-style: italic;
+        }
+
+        .active {
+            letter-spacing: 0.5em;
+        }
+    </style>
+</head>
+
+<body>
+<div id="app">
+    <h1 :class="['red','thin','active']">lalala hello</h1>
+    <!--使用三元表达式-->
+    <!--<h1 :class="['red','thin',flag?'active':'']">lalala hello</h1>-->
+    <!--使用对象代替三元表达式-->
+    <h1 :class="['red','thin',{'active':flag}]">lalala hello</h1>
+    <!--直接使用对象-->
+    <h2 :class="item">lalala hello</h2>
+
+</div>
+
+</body>
+<script>
+    var app = new Vue({
+        el: '#app',
+        data: {
+            flag: false,
+            item: {
+                red: true,
+                thin: false,
+                active: true
+            }
+        },
+        methods: {}
+    })
+
+</script>
+</html>

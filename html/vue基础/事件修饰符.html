@@ -2,41 +2,76 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>事件修饰符</title>
-    <script src="../../js/vue.min.js"></script>
+    <title>title</title>
+    <script src="https://cdn.bootcss.com/vue/2.6.10/vue.min.js"></script>
+    <style>
+        .inner {
+            background-color: blueviolet;
+            height: 500px;
+        }
+        .outer {
+            padding: 50px;
+            background-color: red;
+        }
+
+    </style>
 </head>
 <body>
 <div id="app">
-    　　<div class="outer" @click="outer">
-    　　　　<div class="middle" @click="middle">
-    　　　　　　<button @click="inner">点击我(^_^)</button>
-    　　　　</div>
-    　　</div>
-    　　<p>{{ message }}</p>
+    <div>
+        <!--capture 由外向里触发事件-->
+
+<!--        <div class="inner" @click.capture="div_handle">-->
+<!--            <button value="click me" @click.stop="btn_click">click me</button>-->
+<!--            &lt;!&ndash;使用.prevent 阻止默认行为&ndash;&gt;-->
+<!--            <a href="http://www.baidu.com" @click.prevent.stop="go_baidu">go baidu</a>-->
+<!--            <button @click="btn_click2">click me 2</button>-->
+<!--            <button @click="btn_click3">click me 3</button>-->
+<!--        </div>-->
+        <div class="outer" @click="outerevent">
+
+        <div class="inner" @click="div_handle">
+            <!--self 不能用作阻止冒泡-->
+            <button value="click me" @click.stop="btn_click">click me</button>
+            <!--使用.prevent 阻止默认行为-->
+            <a href="http://www.baidu.com" @click.prevent.stop="go_baidu">go baidu</a>
+            <button @click="btn_click2">click me 2</button>
+            <button @click="btn_click3">click me 3</button>
+
+        </div>
+        </div>
+
+
+
+    </div>
 </div>
+
 </body>
 <script>
-    let app=new Vue({
-        el:'#app',
-        data(){
-            return {message:"测试冒泡事件"}
-
-        },
-        methods:{
-            inner: function () {
-                this.message = 'inner： 这是最里面的Button'
+    var app = new Vue({
+        el: '#app',
+        data: {},
+        methods: {
+            div_handle() {
+                console.log("inner div event")
             },
-            middle: function () {
-                this.message = 'middle: 这是中间的Div'
+            btn_click() {
+                console.log("btn click eventS")
             },
-            outer: function () {
-                this.message = 'outer: 这是外面的Div'
+            go_baidu() {
+                console.log("go baidu?")
+            },
+            btn_click2() {
+                console.log("test capture")
+            },
+            btn_click3() {
+                console.log(" test self click")
+            },
+            outerevent() {
+                console.log("outer event")
             }
-
         }
-
     })
 
 </script>
-
 </html>
