@@ -1,24 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="710c67bf-86f0-43d9-bb4f-f12f6a00023b" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/dictionaries/.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/html/Vue插件/testMyplugin.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/html/Vue插件/vue-myPlugin.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/html/vue基础/vue内联样式使用.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/html/vue基础/vue绑定class.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/html/vue基础/简易计算器.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/html/vue基础/过滤器.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/html/vue简单示例/字符串跑马灯.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/html/vue组件/组件传动态值.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/html/vue组件/计算属性width.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/html/vue组件/返回新对象.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/html/vue基础/input输入框实时同步.html" beforeDir="false" afterPath="$PROJECT_DIR$/html/vue基础/input输入框实时同步.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/html/vue基础/sample.html" beforeDir="false" afterPath="$PROJECT_DIR$/html/vue基础/sample.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/html/vue基础/事件修饰符.html" beforeDir="false" afterPath="$PROJECT_DIR$/html/vue基础/事件修饰符.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/html/vue基础/插值与表达式.html" beforeDir="false" afterPath="$PROJECT_DIR$/html/vue基础/插值与表达式.html" afterDir="false" />
-    </list>
+    <list default="true" id="710c67bf-86f0-43d9-bb4f-f12f6a00023b" name="Default Changelist" comment="" />
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
     <ignored path="$PROJECT_DIR$/tmp/" />
@@ -191,8 +174,8 @@
   <component name="ProjectFrameBounds" extendedState="6">
     <option name="x" value="-10" />
     <option name="y" value="-10" />
-    <option name="width" value="1939" />
-    <option name="height" value="1049" />
+    <option name="width" value="1940" />
+    <option name="height" value="1050" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <ConfirmationsSetting value="2" id="Add" />
@@ -214,12 +197,6 @@
               <item name="vueCode" type="b2602c69:ProjectViewProjectNode" />
               <item name="vueCode" type="462c0819:PsiDirectoryNode" />
               <item name="html" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="vueCode" type="b2602c69:ProjectViewProjectNode" />
-              <item name="vueCode" type="462c0819:PsiDirectoryNode" />
-              <item name="html" type="462c0819:PsiDirectoryNode" />
-              <item name="vue基础" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -300,7 +277,7 @@
       <workItem from="1562854787017" duration="3826000" />
       <workItem from="1563460330808" duration="1505000" />
       <workItem from="1563801358529" duration="4660000" />
-      <workItem from="1563837428073" duration="6917000" />
+      <workItem from="1563837428073" duration="7540000" />
     </task>
     <task id="LOCAL-00001" summary="commit">
       <created>1556582235797</created>
@@ -351,15 +328,21 @@
       <option name="project" value="LOCAL" />
       <updated>1557242808563</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="vue基础结束">
+      <created>1563925653196</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1563925653196</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="124058000" />
+    <option name="totallyTimeSpent" value="124681000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.1994716" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
