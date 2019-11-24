@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>作用域插槽</title>
+    <script src="https://cdn.bootcss.com/vue/2.6.10/vue.js"></script>
+
+</head>
+<body>
+<div id="app">
+    <todo-list :todos="todos">
+        <template slot-scope="slotProps">
+            <span v-if="slotProps.todo.iscomplete">√</span>
+        {{slotProps.todo.text}}
+        </template>
+
+    </todo-list>
+</div>
+</body>
+<script>
+    Vue.component('todo-list',{
+        template:`
+        <ul>
+          <li
+            v-for="todo in todos"
+            v-bind:key="todo.id"
+          >
+          <slot :todo="todo">
+          {{todo.text}}
+            </slot>
+          </li>
+        </ul>
+        `,
+        props:['todos']
+    })
+let app =new Vue({
+    el: '#app',
+    data(){
+        return{
+            todos: [
+                {id:1,text:'first', iscomplete:true},
+                {id:2,text:'second',iscomplete:false},
+                {id:3,text:'third11', iscomplete:false},
+                {id:4,text:'forth', iscomplete:true},
+            ]
+        }
+    }
+})
+</script>
+</html>

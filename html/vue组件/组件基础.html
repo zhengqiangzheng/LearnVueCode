@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>组件</title>
+    <script src="https://cdn.bootcss.com/vue/2.6.10/vue.js"></script>
+</head>
+<body>
+<div id="app">
+<first-Comp></first-Comp>
+    <middle-comp></middle-comp>
+    <Vbtn></Vbtn>
+</div>
+<script>
+    Vue.component('Vbtn',{
+        template :`<button>button</button>`,
+        data(){
+            return{}
+
+        }
+    })
+    var FirstComp= {
+        data() {
+            return {}
+        },
+        methods:{
+            clickHandler(){
+                console.log(this);
+            }
+        },
+        template:`<div>局部组件
+                      <button @click="clickHandler">点我</button>
+                    </div>`,
+    }
+    var SecondComp= {
+        data() {
+            return {}
+        },
+        template:`
+           <div>second component</div>
+        `,
+    }
+
+    let vm =new Vue({
+        el:'#app',
+        components:{
+            FirstComp,
+            MiddleComp:SecondComp,
+        }
+    })
+
+</script>
+</body>
+</html>

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>具名插槽</title>
+    <script src="https://cdn.bootcss.com/vue/2.6.10/vue.js"></script>
+
+<body>
+<div id="app">
+<parent></parent>
+</div>
+</body>
+
+
+<script>
+    Vue.component('Parent',{
+        template :`
+        <div>
+        使用slot分发内容
+        <child>
+        <template v-slot:header>
+        <h1>页头内容12321</h1>
+        </template>
+        <template v-slot:footer>
+        <h1>页尾内容1231231</h1>
+        </template>
+        </child>
+        </div>
+    `
+    })
+    Vue.component('Child',{
+        template :`
+    <div class="header">
+    <h1>我是页头标题</h1>
+    <div>
+    //页头内容
+    <slot name="header"></slot>
+    </div>
+    <div class="footer">
+    <h1>我是也为标题</h1>
+    <slot name="footer"></slot>
+    </div>
+    </div>
+
+    `
+    })
+    let app=new Vue({
+        el:'#app',
+        data: {
+        }
+
+    })
+</script>
+
+</html>
