@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>title</title>
+    <script src="https://cdn.bootcss.com/vue/2.6.10/vue.min.js"></script>
+</head>
+<body>
+<div id="app">
+<parent>
+</parent>
+</div>
+
+</body>
+<script>
+    Vue.component('parent',{
+        template:`
+            <div>
+             <h2>{{title}}</h2>
+             <child v-on:titleChanged="updateTitle" > </child>
+            </div>
+        `,
+        data: function () {
+            return{
+                title:'initial data'
+            }
+        },
+        methods:{
+            updateTitle(e){   //声明这个函数
+                this.title = e;
+            }
+        }
+    })
+    Vue.component('child',{
+        template: `
+        <div>
+        <button @click="changeTitle">transport data</button>
+        </div>
+        `,
+        methods: {
+            changeTitle(){
+                this.$emit('titleChanged','儿子传过来的title')
+            }
+        }
+    })
+    var app = new Vue({
+        el: '#app',
+        data: {},
+        methods: {}
+    })
+
+</script>
+</html>

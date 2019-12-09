@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>title</title>
+    <script src="https://cdn.bootcss.com/vue/2.6.10/vue.min.js"></script>
+</head>
+<body>
+<div id="app">
+    <input type="text" v-model="msg">
+    <p>{{msg}}</p>
+    <p>{{getArrName}}</p>
+    <button @click="changeArr">click</button>
+
+</div>
+
+</body>
+<script>
+    var app = new Vue({
+        el: '#app',
+        data: {
+            msg: "",
+            arr: [{name: "小明"},{name: "小刚"},{name: "小强"},{name: "小红"}],
+            currentIndex: 0
+        },
+        methods: {
+            changeArr(){
+                this.currentIndex++;
+            }
+        },
+        watch: {
+            msg: function (newV, oldV) {
+                if (newV == "123") {
+                    alert(123)
+                }
+            }
+            // arr: {
+            //     deep: true,
+            //     handler: function (newV, oldV) {
+            //         console.log(newV[0].name)
+            //     }
+            // }
+        },
+        computed:{
+            getArrName:function () {
+                return this.arr[this.currentIndex].name
+            }
+        }
+    })
+
+</script>
+</html>

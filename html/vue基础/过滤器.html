@@ -1,0 +1,41 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>title</title>
+    <script src="https://cdn.bootcss.com/vue/2.6.10/vue.min.js"></script>
+</head>
+<body>
+<div id="app">
+    <input type="text" v-model="price">
+    <p>{{price | myCurrency}}</p>
+    <p>{{msg | myFilter("myFilter")}}</p>
+</div>
+
+</body>
+<script>
+    //全局过滤器
+    Vue.filter('myFilter',function (value,arg) {
+        return arg + value.split("").reverse().join("");
+    })
+
+    var app = new Vue({
+        el: '#app',
+        data: {
+            price:"",
+            msg:"hello world"
+        },
+        methods: {
+
+        },
+        filters: {
+            myCurrency:function(val) {
+                return val+"￥"
+
+            }
+        }
+    })
+
+</script>
+</html>

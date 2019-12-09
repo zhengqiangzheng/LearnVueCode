@@ -2,74 +2,53 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>firstdemo</title>
-
-
+    <title>title</title>
+    <script src="https://cdn.bootcss.com/vue/2.6.10/vue.min.js"></script>
 </head>
 <body>
 <div id="app">
-
+<child :msg="msg"  v-on:titleChanged="updateTitle"></child>
+<h2>{{title}}</h2>
 </div>
+
 </body>
-<script src="https://cdn.bootcss.com/vue/2.6.10/vue.js"></script>
-
-
-
-</html>
-<script type="text/javascript">
-    Vue.component('parent',{
-        template:`
-        <div>
-        <p>parent component</p>
-        <child :childData="msg" @sonmsg="sonmsg"/>
-        </div>
-        `,
-        data() {
-            return{
-                msg:'data of parent',
-
-            }
-        },
-        methods:{
-            sonmsg(val){
-                console.log(val)
-            }
-
-        }
-
-    })
+<script>
     Vue.component('child',{
         template:`
         <div>
-        <p>child component</p>
-        <input type="text" v-model="childData" @input="sendPar(childData)">
+        <p>{{msg}}</p>
+        <button @click="changeTitle">click me</button>
         </div>
         `,
-        props:['childData'],
-        data() {
-            return{
-
-            }
-        },
-        methods:{
-            sendPar(val){
-              this.$emit('sonmsg',val)
-            }
-        }
-    })
-    let app = new Vue({
-        el: '#app',
         data(){
             return{
 
             }
         },
-        template :`
-            <parent>
-            </parent>
-        `
+        props:{
+            msg:{
+                type:String,
+                required:true
+            }
+        },
+        methods: {
+            changeTitle(){
+                this.$emit('titleChanged','儿子传过来的title')
+            }
+        }
+    })
+    var app = new Vue({
+        el: '#app',
+        data: {
+            msg:'父亲的消息',
+            title:'initial data'
+        },
+        methods: {
+            updateTitle(e){
+                this.title=e
+            }
+        }
+    })
 
-
-
-    });
 </script>
+</html>
